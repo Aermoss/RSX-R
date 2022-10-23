@@ -14,7 +14,7 @@ setup(
     version = "0.0.1",
     entry_points = {
         "console_scripts": [
-            "rsxrpy = rsxpy.main:main"
+            "rsxr = rsxr.main:main"
         ]
     },
     description = "A compiled statically typed multi paradigm general purpose programming language designed for cross platform applications.",
