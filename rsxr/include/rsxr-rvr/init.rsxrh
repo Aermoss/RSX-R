@@ -1,0 +1,4 @@
+namespace rvr {
+    include "rsxr-rvr/rsxr-rvr.rsxrh" : *;
+    include "rsxr-rvr/constants.rsxrh" : *;
+}

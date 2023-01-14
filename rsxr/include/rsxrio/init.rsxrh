@@ -1,0 +1,5 @@
+include "rsxrio/stdio.rsxrh" : *;
+
+namespace std {
+    include "rsxrio/rsxrio.rsxrh" : *;
+}

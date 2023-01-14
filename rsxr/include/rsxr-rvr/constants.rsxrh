@@ -1,0 +1,4 @@
+int RVREyeLeft = 0;
+int RVREyeRight = 1;
+int RVRControllerLeft = 0;
+int RVRControllerRight = 1;

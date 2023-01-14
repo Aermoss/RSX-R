@@ -1,0 +1,4 @@
+namespace std {
+    include "rsxrmath/rsxrmath.rsxrh" : *;
+    double pi = 3.14159265358979323846;
+}

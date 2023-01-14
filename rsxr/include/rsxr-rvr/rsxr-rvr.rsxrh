@@ -1,0 +1,16 @@
+bool RVRInit();
+bool RVRSetupStereoRenderTargets();
+bool RVRInitControllers();
+bool RVRInitEyes(float nearClip, float farClip);
+bool RVRBeginRendering(int eye);
+bool RVREndRendering();
+bool RVRDrawControllers();
+bool RVRShutdown();
+bool RVRDeleteFramebufferDescriptors();
+bool RVRRenderControllers();
+bool RVRSubmitFramebufferDescriptorsToCompositor();
+void RVRPollEvents();
+void RVRUpdateHMDPoseMatrix();
+void RVRTriggerHapticVibration(int controller, float duration, float frequency, float amplitude);
+bool RVRGetControllerTriggerClickState(int controller);
+bool RVRGetControllerGripClickState(int controller);

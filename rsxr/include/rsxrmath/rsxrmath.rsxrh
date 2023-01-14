@@ -1,0 +1,155 @@
+double lerp(double a, double b, double f) return a + f * (b - a);
+float lerpf(float a, float b, float f) return a + f * (b - a);
+
+double acos(double arg);
+float acosf(float arg);
+
+double acosh(double arg);
+float acoshf(float arg);
+
+double asin(double arg);
+float asinf(float arg);
+
+double asinh(double arg);
+float asinhf(float arg);
+
+double atan(double arg);
+float atanf(float arg);
+
+double atan2(double arg);
+float atan2f(float arg);
+
+double cbrt(double arg);
+float cbrtf(float arg);
+
+double ceil(double arg);
+float ceilf(float arg);
+
+double copysign(double x, double y);
+float copysignf(float x, float y);
+
+double cos(double arg);
+float cosf(float arg);
+
+double cosh(double arg);
+float coshf(float arg);
+
+double erf(double arg);
+float erff(float arg);
+
+double erfc(double arg);
+float erfcf(float arg);
+
+double exp(double arg);
+float expf(float arg);
+
+double exp2(double arg);
+float exp2f(float arg);
+
+double expm1(double arg);
+float expm1f(float arg);
+
+double fabs(double arg);
+float fabsf(float arg);
+
+double fdim(double x, double y);
+float fdimf(float x, float y);
+
+double floor(double arg);
+float floorf(float arg);
+
+double fma(double x, double y, double z);
+float fmaf(float x, float y, float z);
+
+double fmax(double x, double y);
+float fmaxf(float x, float y);
+
+double fmin(double x, double y);
+float fminf(float x, float y);
+
+double fmod(double x, double y);
+float fmodf(float x, float y);
+
+// double frexp(double arg, int[] exp);
+// float frexpf(float arg, int[] exp);
+
+double hypot(double x, double y);
+float hypotf(float x, float y);
+
+double ilogb(double arg);
+float ilogbf(float arg);
+
+double ldexp(double arg, int exp);
+float ldexpf(float arg, int exp);
+
+double lgamma(double arg);
+float lgammaf(float arg);
+
+double log(double arg);
+float logf(float arg);
+
+double log10(double arg);
+float log10f(float arg);
+
+double log2(double arg);
+float log2f(float arg);
+
+double log1p(double arg);
+float log1pf(float arg);
+
+double logb(double arg);
+float logbf(float arg);
+
+// double modf(double arg, double[] pint);
+// float modff(float arg, float[] pint);
+
+// double modf(double arg, double[] pint);
+// float modff(float arg, float[] pint);
+
+double nan(string arg);
+float nanf(string arg);
+
+double nearbyint(double arg);
+float nearbyintf(float arg);
+
+double nextafter(double x, double y);
+float nextafterf(float x, float y);
+
+double pow(double base, double exp);
+float powf(float base, float exp);
+
+double remainder(double x, double y);
+float remainderf(float x, float y);
+
+// double remquo(double x, double y, int[] quo);
+// float remquof(float x, float y, int[] quo);
+
+double rint(double arg);
+float rintf(float arg);
+
+double round(double arg);
+float roundf(float arg);
+
+double scalbn(double arg, int exp);
+float scalbnf(float arg, int exp);
+
+double sin(double arg);
+float sinf(float arg);
+
+double sinh(double arg);
+float sinhf(float arg);
+
+double sqrt(double arg);
+float sqrtf(float arg);
+
+double tan(double arg);
+float tanf(float arg);
+
+double tanh(double arg);
+float tanhf(float arg);
+
+double tgamma(double arg);
+float tgammaf(float arg);
+
+double trunc(double arg);
+float truncf(float arg);

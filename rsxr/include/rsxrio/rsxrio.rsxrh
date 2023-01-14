@@ -1,0 +1,8 @@
+void rout(string a, string b) {
+    printf("%s%s", a, b);
+    return;
+}
+
+string endl() {
+    return "\n";
+}

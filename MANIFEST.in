@@ -1,3 +1,9 @@
 include rsxr/*
 include rsxr/asm/*
-include rsxr/obj/*
+include rsxr/bin/*
+include rsxr/lib/*
+include rsxr/include/rsxr-rvr/*
+include rsxr/include/rsxrgl/*
+include rsxr/include/rsxrglfw/*
+include rsxr/include/rsxrio/*
+include rsxr/include/rsxrmath/*

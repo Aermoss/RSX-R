@@ -1,0 +1,11 @@
+bool glfwlInit(...);
+void glfwlTerminate(...);
+bool glfwlCreateWindow(...);
+void glfwlPollEvents(...);
+void glfwlSwapBuffers(...);
+bool glfwlWindowShouldClose(...);
+void glfwlMakeContextCurrent(...);
+void glfwlSwapInterval(...);
+void glfwlDestroyWindow(...);
+bool glfwlGetKey(...);
+void glfwlGetWindowSize(...);
