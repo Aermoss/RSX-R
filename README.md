@@ -32,7 +32,8 @@ include "rsxrio" : *;
 int main() {
     std::rout("Hello, World!", std::endl());
     return 0;
-}```
+}
+```
 
 ## Factorial and Fibonacci
 ```c++
@@ -53,7 +54,8 @@ int main() {
     n = 5; printf("factorial(%d) = %d\n", n, factorial(n));
     n = 8; printf("fibonacci(%d) = %d\n", n, fibonacci(n));
     return 0;
-}```
+}
+```
 
 # Libraries
 - rsxrio
