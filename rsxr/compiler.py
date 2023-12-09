@@ -313,7 +313,7 @@ def compiler(ast, context: Context, builder = None):
                     ast = core.parser(core.lexer(tools.read_file(file_path), file_path), file_path)
 
                     with open(os.path.splitext(file_path)[0] + ".rsxrc", "wb") as file:
-                        file.write(tools.dump_bytecode(ast, [], file_content))
+                        file.write(tools.dump_bytecode(ast, file_content, context.version))
 
                 context.prepare_to_include(file_path)
                 tmp_parent_scopes = context.parent_scopes
@@ -656,6 +656,19 @@ def compiler(ast, context: Context, builder = None):
                     value = builder.load(value)
                 res = ir.Constant(ir.IntType(32), int(context.get_sizeof(value) / 8))
                 if len(ast) == 1: return res
+                continue
+
+            if i["value"]["value"] == "addrof":
+                if len(i["args"]) != 1:
+                    tools.error("invalid argument count", context.file)
+
+                if i["args"][0]["type"] != "IDENTIFIER":
+                    tools.error("invalid argument type", context.file)
+
+                value = context.get(i["args"][0]["value"])["ptr"]
+
+                if not value.type.is_pointer: continue
+                if len(ast) == 1: return value
                 continue
 
             func = context.get(compiler([i["value"]], context, builder))
